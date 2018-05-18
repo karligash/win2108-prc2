@@ -1,0 +1,18 @@
+.jumbotron {
+    
+}
+
+.jumbotron, .jumbotron-fluid {
+    height: 20px;
+   
+}
+.bg-info {
+    background-color: #A52A2A;
+   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container{
+    background-color: ##757364;
+}

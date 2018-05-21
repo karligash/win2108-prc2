@@ -14,5 +14,12 @@
     background-repeat: no-repeat;
 }
 .container{
-    background-color: ##757364;
+    background-color: #007EA7;
+}
+.box1, .box2 {
+    width: 200px;
+    height: 200px;
+}
+body {
+    background-color: #F7F4EA;
 }

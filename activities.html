@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/myStyle.css" type="text/css" />
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+      <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/vader/jquery-ui.min.css">
     <title>Martha"s Vineyard</title>
   </head>
   <body>
@@ -37,44 +38,35 @@
                
             </div> <!--end of jumbotron container -->
         </div> <!-- end of jumbotron   -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script> 
-$(document).ready(function(){
-    $("button").click(function(){
-        $("div").animate({
-            left: '250px',
-           
-            height: '150px',
-            width: '150px'
-        });
-    });
-});
-</script>  
-          <div class="album py-5 bg-light">
+        
+          <div class="album py-5 bg-info">
         <div class="container">
 
           <div class="row">
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="images/beachmv.jpg" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="images/beachmv.jpg" data-holder-rendered="true">
-                <div class="card-body"><h2>BEACHES</h2>
+                <img class="card-img-top" id="img1" data-src="images/beachmv.jpg" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="images/beachmv.jpg" data-holder-rendered="true">
+                <div class="card-body">
+                    <button id="btn3"><h2>BEACHES</h2></button>
                   <div class="d-flex justify-content-between align-items-center">
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-md-4">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="images/bikingmv.jpg" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="images/bikingmv.jpg" data-holder-rendered="true">
-                <div class="card-body"><h2>BIKING</h2>
+              <div class="card mb-4 box-shadow" >
+                <img class="card-img-top" id="img2" data-src="images/bikingmv.jpg"  alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="images/bikingmv.jpg" data-holder-rendered="true">
+                <div class="card-body">
+                    <button id="clickme"><h2>BIKING</h2></button>
                   
                 </div>
               </div>
             </div>
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="images/parkatmv.jpeg" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="images/parkatmv.jpeg" data-holder-rendered="true">
-                <div class="card-body"><h2>PARKS</h2>
+                <img class="card-img-top" data-src="images/parkatmv.jpeg" id="img3" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="images/parkatmv.jpeg" data-holder-rendered="true">
+                <div class="card-body">
+                    <button><h2>PARKS</h2></button>
                   
                 </div>
               </div>
@@ -82,24 +74,27 @@ $(document).ready(function(){
 
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="images/golfatmv.jpg" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="images/golfatmv.jpg" data-holder-rendered="true">
-                <div class="card-body"><h2>GOLF</h2>
+                <img class="card-img-top" data-src="images/golfatmv.jpg" id="img4" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="images/golfatmv.jpg" data-holder-rendered="true">
+                <div class="card-body">
+                    <button><h2>GOLF</h2></button>
                   
                 </div>
               </div>
             </div>
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="images/tennismv.jpg" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="images/tennismv.jpg" data-holder-rendered="true">
-                <div class="card-body"><h2>TENNIS</h2>
+                <img class="card-img-top" data-src="images/tennismv.jpg" id="img5" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="images/tennismv.jpg" data-holder-rendered="true">
+                <div class="card-body">
+                    <button><h2>TENNIS</h2></button>
                   
                 </div>
               </div>
             </div>
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="images/watersportsmv.jpg" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="images/watersportsmv.jpg" data-holder-rendered="true">
-                <div class="card-body"><h2>WATER SPORTS</h2>
+                <img class="card-img-top" data-src="images/watersportsmv.jpg" id="img6" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="images/watersportsmv.jpg" data-holder-rendered="true">
+                <div class="card-body">
+                    <button><h2>WATER SPORTS</h2></button>
                   
                 </div>
               </div>
@@ -138,6 +133,7 @@ $(document).ready(function(){
         
           <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
